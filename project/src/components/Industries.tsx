@@ -61,7 +61,7 @@ export const Industries = () => {
           <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-brand-purple to-brand-pink bg-clip-text text-transparent">
             Industries We Serve
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto">
             We deliver tailored solutions across various industries, helping businesses thrive in the digital age.
           </p>
         </motion.div>

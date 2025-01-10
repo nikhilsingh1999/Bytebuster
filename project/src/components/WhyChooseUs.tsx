@@ -49,10 +49,10 @@ export const WhyChooseUs = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-brand-purple to-brand-pink bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
             Why Choose ByteBuster?
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto">
             We combine innovation with reliability to deliver exceptional results for our clients.
           </p>
         </motion.div>

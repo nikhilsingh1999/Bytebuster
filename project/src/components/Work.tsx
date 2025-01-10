@@ -71,8 +71,8 @@ export const Work = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl text-white font-bold mb-4 ">Our Work</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-4xl bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent font-bold mb-4 ">Our Work</h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
             Take a look at some of our recent projects and see how we've helped businesses achieve their digital goals.
           </p>
         </motion.div>

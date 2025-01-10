@@ -42,7 +42,7 @@ export const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-brand-purple to-brand-pink  bg-clip-text text-transparent">About Byte Buster</h2>
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">About Byte Buster</h2>
           <p className="text-gray-400 max-w-3xl mx-auto text-lg">
             We're a team of passionate developers, designers, and digital strategists dedicated to creating exceptional digital experiences that drive real business results.
           </p>

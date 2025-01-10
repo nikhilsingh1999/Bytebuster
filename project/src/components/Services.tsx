@@ -78,7 +78,7 @@ export const Services = () => {
           transition={{ duration: 1.2 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 text-white">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
             We Love What We Do And We're Proud Of Our Results
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">

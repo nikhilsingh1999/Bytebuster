@@ -18,7 +18,7 @@ export const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-extrabold mb-6 text-white">
+          <h2 className="text-5xl font-extrabold mb-6 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
             Let's Work Together
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
