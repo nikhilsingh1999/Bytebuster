@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Loader } from './components/Loader';
 import { Navbar } from './components/Navbar';
 import { CustomCursor } from './components/CustomCursor';
@@ -11,10 +12,10 @@ import { Work } from './components/Work';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import Testimonials from './components/Testimonials';
+import CareerPage from './pages/Careerpage';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Testimonials from './components/Testimonials';
-
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,24 +31,37 @@ function App() {
   return (
     <>
       <CustomCursor />
-      <AnimatePresence>
-        {loading && <Loader />}
-      </AnimatePresence>
-      <div className="min-h-screen bg- overflow-x-hidden">
-        <div className="max-w-[1920px] mx-auto px-4 md:px-8 lg:px-16">
-          <Navbar />
-          <Hero />
-          <Services />
-          <WhyChooseUs />
-          <Industries />
-          <Work />
-          <Testimonials />
-          <About />
-          <Contact />
-          <Footer />
+      <AnimatePresence>{loading && <Loader />}</AnimatePresence>
+      <Router>
+        <div className="min-h-screen bg- overflow-x-hidden">
+          <div className="max-w-[1920px] mx-auto px-4 md:px-8 lg:px-16">
+            <Navbar />
+            <Routes>
+              {/* Main Page */}
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Hero />
+                    <Services />
+                    <WhyChooseUs />
+                    <Industries />
+                    <Work />
+                    <Testimonials />
+                    <About />
+                    <Contact />
+                  </>
+                }
+              />
+              {/* Career Page */}
+              <Route path="/careers" element={<CareerPage />} />
+            </Routes>
+            <Footer />
+          </div>
         </div>
-      </div>
+      </Router>
     </>
   );
 }
+
 export default App;
