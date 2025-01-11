@@ -14,13 +14,13 @@ const founders = [
   {
     name: "Satyam Tiwari",
     title: "Co-Founder & Digital Strategist",
-    image: "/images/satyam.jpg", // Replace with actual image path
+    image: "https://i.postimg.cc/s28qGDzD/Whats-App-Image-2025-01-11-at-12-51-29-PM.jpg", // Replace with actual image path
     bio: "Satyam Tiwari brings a wealth of expertise in digital strategy and client relationships, ensuring Byte Buster delivers value-driven results on every project.",
   },
   {
     name: "Nikhil Singh",
     title: "Co-Founder & Lead Developer",
-    image: "/images/nikhil.jpg", // Replace with actual image path
+    image: "https://i.postimg.cc/zXdGsRWc/profile-DP.png", // Replace with actual image path
     bio: "Nikhil Singh is the tech powerhouse behind Byte Buster, spearheading innovative solutions and guiding the team to success with over 10 years of experience.",
   },
 ];

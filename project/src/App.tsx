@@ -13,6 +13,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Testimonials from './components/Testimonials';
 
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
           <WhyChooseUs />
           <Industries />
           <Work />
-          
+          <Testimonials />
           <About />
           <Contact />
           <Footer />
