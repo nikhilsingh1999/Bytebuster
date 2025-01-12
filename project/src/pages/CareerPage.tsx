@@ -39,7 +39,7 @@ const testimonials = [
   },
 ];
 
-const CareerPage = () => {
+const Careerpage = () => {
   return (
     <div className="pt-16  text-white">
       {/* Hero Section */}
@@ -163,4 +163,4 @@ const CareerPage = () => {
   );
 };
 
-export default CareerPage;
+export default Careerpage;

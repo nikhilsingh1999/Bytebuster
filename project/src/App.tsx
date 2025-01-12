@@ -13,7 +13,9 @@ import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import Testimonials from './components/Testimonials';
-import CareerPage from './pages/Careerpage';
+
+import Careerpage from './pages/Careerpage';
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -54,7 +56,7 @@ function App() {
                 }
               />
               {/* Career Page */}
-              <Route path="/careers" element={<CareerPage />} />
+              <Route path="/careers" element={<Careerpage />} />
             </Routes>
             <Footer />
           </div>
