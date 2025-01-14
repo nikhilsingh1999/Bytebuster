@@ -43,7 +43,7 @@ export const CustomCursor = () => {
         y: position.y - 16,
         scale: isClicking ? 0.8 : isHovering ? 1.2 : 1,
       }}
-      transition={{ type: "spring", stiffness: 500, damping: 28 }}
+      transition={{ type: "spring", stiffness: 1500, damping: 20 }}
     >
       <motion.div
         className="text-white text-2xl font-mono"

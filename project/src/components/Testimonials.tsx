@@ -4,24 +4,26 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
-    role: 'CEO, TechStart',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80',
-    quote: 'ByteBusters transformed our digital presence completely. Their attention to detail and innovative solutions exceeded our expectations.',
+    name: 'Aarav Mehta',
+    role: 'Founder, StartupIndia',
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80',
+    quote: 'ByteBusters provided us with a platform that transformed the way we connect with our audience. Their solutions are innovative and tailored to our needs.',
   },
   {
-    name: 'Michael Chen',
-    role: 'Founder, GrowthLabs',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80',
-    quote: 'Working with ByteBusters was a game-changer for our business. They delivered a stunning website that truly represents our brand.',
+    name: 'Priya Sharma',
+    role: 'Director, Digital Innovators',
+    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80',
+    quote: 'The ByteBusters team delivered beyond our expectations. Their expertise helped us establish a digital presence that truly resonates with our customers.',
   },
   {
-    name: 'Emma Davis',
-    role: 'Marketing Director, Innovate Inc',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80',
-    quote: 'The team at ByteBusters is exceptional. Their expertise and dedication to our project was evident throughout the entire process.',
+    name: 'Rohan Gupta',
+    role: 'Marketing Head, BharatBiz',
+    image: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80', // New image URL
+    quote: 'We couldn’t be happier with ByteBusters. Their creativity and technical skills brought our vision to life, making a lasting impact on our clients.',
   },
 ];
+
+
 
 const TestimonialCard = ({ testimonial, index }) => {
   const [ref, inView] = useInView({

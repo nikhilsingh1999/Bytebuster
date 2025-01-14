@@ -1,12 +1,52 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useState } from "react";
+import emailjs from "emailjs-com";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export const Contact = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState({
+    success: false,
+    loading: false,
+    error: false,
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus({ success: false, loading: true, error: false });
+
+    emailjs
+      .send(
+        "service_iaknoup",
+        "template_ruk8iqh",
+        formData,
+        "T0qkE3A68WORTYdXF"
+      )
+      .then(() => {
+        setStatus({ success: true, loading: false, error: false });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      })
+      .catch(() => {
+        setStatus({ success: false, loading: false, error: true });
+      });
+  };
 
   return (
     <section className="py-20 glassmorphism my-8" id="contact">
@@ -29,6 +69,7 @@ export const Contact = () => {
         <div className="grid lg:grid-cols-5 gap-12">
           {/* Contact Form */}
           <motion.form
+            onSubmit={handleSubmit}
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
@@ -38,30 +79,46 @@ export const Contact = () => {
               <div>
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
                   placeholder="Your Name"
                   className="w-full px-5 py-4 rounded-lg bg-[#151C31] border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#FF00FF] transition"
+                  required
                 />
               </div>
               <div>
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   placeholder="Your Email"
                   className="w-full px-5 py-4 rounded-lg bg-[#151C31] border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#FF00FF] transition"
+                  required
                 />
               </div>
             </div>
             <div>
               <input
                 type="text"
+                name="subject"
+                value={formData.subject}
+                onChange={handleInputChange}
                 placeholder="Subject"
                 className="w-full px-5 py-4 rounded-lg bg-[#151C31] border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#00FFFF] transition"
+                required
               />
             </div>
             <div>
               <textarea
+                name="message"
                 rows={6}
+                value={formData.message}
+                onChange={handleInputChange}
                 placeholder="Your Message"
                 className="w-full px-5 py-4 rounded-lg bg-[#151C31] border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#FF00FF] transition"
+                required
               />
             </div>
             <motion.button
@@ -69,12 +126,34 @@ export const Contact = () => {
               className="w-full px-8 py-4 rounded-lg bg-gradient-to-r from-[#FF00FF] to-[#00FFFF] text-white font-semibold text-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              disabled={status.loading}
             >
-              Drop Message
+              {status.loading ? "Submitting..." : "Drop Message"}
             </motion.button>
-          </motion.form>
 
-          {/* Contact Information */}
+            {/* Success/Failure Message */}
+            {status.success && (
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="text-green-500 font-medium text-center"
+              >
+                Message sent successfully!
+              </motion.div>
+            )}
+            {status.error && (
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="text-red-500 font-medium text-center"
+              >
+                Something went wrong. Please try again.
+              </motion.div>
+            )}
+          </motion.form>
+         {/* Contact Information */}
           <motion.div
   initial={{ opacity: 0, x: 50 }}
   animate={inView ? { opacity: 1, x: 0 } : {}}

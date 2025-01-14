@@ -62,6 +62,10 @@ export const Hero = () => {
             className="px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-medium text-lg shadow-lg hover:shadow-[#FF00FF]/50"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() =>
+              document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
+            }
+
           >
             Get Started
           </motion.button>
