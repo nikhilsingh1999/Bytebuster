@@ -57,10 +57,10 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Contact</h3>
             <ul className="space-y-4 text-gray-400">
-              <li>123 Tech Street</li>
-              <li>Digital City, DC 12345</li>
+              <li>234 , Sector C Indrapuri</li>
+              <li>Bhopal,(M.P.)</li>
               <li>hello@bytebuster.com</li>
-              <li>+1 (555) 123-4567</li>
+              <li>+91 (966) 942-8739</li>
             </ul>
           </div>
         </div>

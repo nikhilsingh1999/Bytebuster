@@ -1,5 +1,7 @@
 
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const jobs = [
   {
@@ -40,6 +42,22 @@ const testimonials = [
 ];
 
 const Careerpage = () => {
+  
+    useEffect(() => {
+      // Reset scroll to the top of the page
+      window.scrollTo(0, 0);
+    }, []);
+
+  const navigate = useNavigate();
+
+  const handleApplyNow = (job) => {
+    // Redirect to job application form with job details
+    navigate(`/apply`, { state: { job } });
+  };
+
+
+
+
   return (
     <div className="pt-16  text-white">
       {/* Hero Section */}
@@ -52,9 +70,14 @@ const Careerpage = () => {
           innovate.
         </p>
         <button 
-        onClick={() =>
-          document.getElementById('jobsection').scrollIntoView({ behavior: 'smooth' })
+       onClick={() => {
+        const jobSection = document.getElementById('jobsection');
+        if (jobSection) {
+          jobSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          console.error('Job section not found');
         }
+      }}
         className="mt-8 px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50">
           View Open Positions
         </button>
@@ -142,7 +165,10 @@ const Careerpage = () => {
                   {job.location} | {job.type}
                 </p>
                 <p className="mt-2 text-gray-300">{job.description}</p>
-                <button className="mt-4 px-4 py-2 bg-gradient-to-r from-purple-800 to-blue-400 rounded-lg font-semibold hover:shadow-lg">
+                <button
+                  onClick={() => handleApplyNow(job)}
+                  className="mt-4 px-4 py-2 bg-gradient-to-r from-purple-800 to-blue-400 rounded-lg font-semibold hover:shadow-lg"
+                >
                   Apply Now
                 </button>
               </div>

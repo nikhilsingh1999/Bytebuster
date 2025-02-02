@@ -16,6 +16,7 @@ import Testimonials from './components/Testimonials';
 import Careerpage from './pages/Careerpage';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import JobApplication from './pages/JobApplication';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -55,6 +56,7 @@ function App() {
               />
               {/* Career Page */}
               <Route path="/careers" element={<Careerpage />} />
+              <Route path="/apply" element={<JobApplication />} />
             </Routes>
             <Footer />
           </div>

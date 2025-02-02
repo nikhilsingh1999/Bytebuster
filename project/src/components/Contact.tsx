@@ -32,8 +32,8 @@ export const Contact = () => {
     e.preventDefault();
     setStatus({ success: false, loading: true, error: false });
 
-    emailjs
-      .send(
+    emailjs.send
+      (
         "service_iaknoup",
         "template_ruk8iqh",
         formData,
@@ -168,7 +168,7 @@ export const Contact = () => {
                 <h3 className="text-xl font-semibold text-white mb-2">WhatsApp Us</h3>
                 <p className="text-gray-400">
                   <a
-                    href="https://wa.me/15551234567"
+                    href="https://wa.me/9131753246"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-[#25D366] transition-colors"
@@ -200,8 +200,8 @@ export const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Call Us</h3>
-                <p className="text-gray-400">+91 (555) 123-4567</p>
-                <p className="text-gray-400">+91 (555) 987-6543</p>
+                <p className="text-gray-400">+91 (966) 942-8739</p>
+                <p className="text-gray-400">+91 (913) 175-3246</p>
               </div>
             </div>
 
@@ -211,8 +211,8 @@ export const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Visit Us</h3>
-                <p className="text-gray-400">123 Innovation Street</p>
-                <p className="text-gray-400">Tech City, TC 12345</p>
+                <p className="text-gray-400">234 , Sector C Indrapuri</p>
+                <p className="text-gray-400">Bhopal,(M.P.) </p>
               </div>
             </div>
 

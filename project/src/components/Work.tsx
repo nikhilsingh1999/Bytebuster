@@ -2,37 +2,42 @@ import Slider from 'react-slick';
 import { motion } from 'framer-motion';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import I from '../Images/4190945.jpg'
+import I1 from '../Images/4478838.jpg'
+import I2 from '../Images/4627182.jpg'
+import I3 from '../Images/4758689.jpg'
+import I4 from '../Images/5421915.jpg'
 
 // Work data
 const projects = [
   {
     title: 'Mobile App',
     category: 'App Development',
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600',
+    image: I1,
     tools: ['React Native', 'Firebase'],
   },
   {
     title: 'E-commerce Platform',
     category: 'Web Development',
-    image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&w=600',
+    image: I3,
     tools: ['React', 'Node.js', 'MongoDB'],
   },
   {
     title: 'Portfolio Website',
     category: 'Web Design',
-    image: 'https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&w=600',
+    image: I2,
     tools: ['Next.js', 'Tailwind CSS'],
   },
   {
     title: 'Mobile App',
     category: 'App Development',
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600',
+    image: I,
     tools: ['React Native', 'Firebase'],
   },
   {
     title: 'Analytics Dashboard',
     category: 'Data Visualization',
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600',
+    image: I4,
     tools: ['D3.js', 'Python', 'Flask'],
   },
 ];
@@ -90,7 +95,7 @@ export const Work = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-contain object-center"
                   onError={(e) => (e.currentTarget.src = '/fallback-image.png')} // Fallback image
                 />
                 <div className="p-4 text-center">

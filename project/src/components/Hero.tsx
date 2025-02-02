@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
+import I1 from '../Images/Dalle.webp';
 
 export const Hero = () => {
   return (
@@ -76,7 +77,7 @@ export const Hero = () => {
 >
   {/* Background Image */}
   <img
-    src="https://i.postimg.cc/RF4GvSC3/DALL-E-2025-01-07-18-25-06-A-modern-and-vibrant-illustration-with-a-deep-dark-blue-and-purple-grad.webp"
+    src={I1}
     alt="Modern Development"
     className="rounded-2xl shadow-2xl w-full h-[300px] sm:h-[400px] object-cover"
   />
