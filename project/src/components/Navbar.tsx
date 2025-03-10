@@ -16,7 +16,7 @@ export const Navbar = () => {
   );
 
   const menuItems = [
-    { name: 'Home', id: '#home' },
+    // { name: 'Home', id: '#home' },
     { name: 'Services', id: '#services' },
     { name: 'Work', id: '#work' },
     { name: 'About', id: '#about' },
@@ -67,15 +67,17 @@ export const Navbar = () => {
       }`}
     >
       <div className="flex items-center justify-between">
-        {/* Logo */}
-        <motion.div
+              {/* Logo */}
+              <motion.div
           className="flex items-center space-x-2"
           whileHover={{ scale: 1.05 }}
         >
-          <Code2 className="w-8 h-8 text-purple-600" />
-          <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-            ByteBuster
-          </span>
+          <a href="#home" className="flex items-center space-x-2">
+            <Code2 className="w-8 h-8 text-purple-600" />
+            <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+              ByteBuster
+            </span>
+          </a>
         </motion.div>
 
         {/* Desktop Menu */}
