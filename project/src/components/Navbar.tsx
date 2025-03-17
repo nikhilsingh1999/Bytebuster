@@ -22,6 +22,7 @@ export const Navbar = () => {
     { name: 'About', id: '#about' },
     { name: 'Contact', id: '#contact' },
     { name: 'Career', route: '/careers' },
+    { name: 'Pricing', route: '/pricing' },
   ];
 
   // Handle scroll behavior
@@ -42,7 +43,7 @@ export const Navbar = () => {
   }, [lastScrollY]);
 
   // Scroll to section
-  const scrollToSection = (id) => {
+  const scrollToSection = (id : string) => {
     if (window.location.pathname !== '/') {
       navigate('/'); // Navigate to homepage
       setTimeout(() => {

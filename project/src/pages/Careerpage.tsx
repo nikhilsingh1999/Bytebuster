@@ -24,6 +24,18 @@ const jobs = [
     type: "Full-time",
     description: "Lead and coordinate projects to ensure timely delivery.",
   },
+  {
+    title: "Backend developer",
+    location: "On-site",
+    type: "Full-time",
+    description: "Join our team to develop scalable web solutions using modern tech stacks.",
+  },
+  {
+    title: "Frontend developer",
+    location: "On-site",
+    type: "Full-time",
+    description: "Join our team to develop scalable web solutions using modern tech stacks.",
+  },
 ];
 
 const testimonials = [

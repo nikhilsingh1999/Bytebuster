@@ -5,6 +5,7 @@ export const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isClicking, setIsClicking] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const updatePosition = (e: MouseEvent) => {
@@ -19,10 +20,17 @@ export const CustomCursor = () => {
       setIsHovering(target.tagName === 'BUTTON' || target.tagName === 'A');
     };
 
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
     window.addEventListener('mousemove', updatePosition);
     window.addEventListener('mousedown', handleMouseDown);
     window.addEventListener('mouseup', handleMouseUp);
     window.addEventListener('mouseover', handleMouseOver);
+    window.addEventListener('resize', checkIfMobile);
+
+    checkIfMobile();
 
     document.body.style.cursor = 'none';
 
@@ -34,6 +42,10 @@ export const CustomCursor = () => {
       document.body.style.cursor = 'auto';
     };
   }, []);
+
+  if (isMobile) {
+    return null;
+  }
 
   return (
     <motion.div

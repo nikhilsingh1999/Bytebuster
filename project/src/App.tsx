@@ -17,6 +17,9 @@ import Careerpage from './pages/Careerpage';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import JobApplication from './pages/JobApplication';
+import Termsandconditions from './pages/Termsandconditions';
+import Privacyandpolicy from './pages/Privacyandpolicy';
+import Pricingpage from './pages/Pricingpage';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,7 +37,7 @@ function App() {
       <CustomCursor />
       <AnimatePresence>{loading && <Loader />}</AnimatePresence>
       <Router>
-        <div className="min-h-screen bg- overflow-x-hidden">
+        <div className="min-h-screen bg-[#0B1120] overflow-x-hidden">
           <div className="max-w-[1920px] mx-auto px-4 md:px-8 lg:px-16">
             <Navbar />
             <Routes>
@@ -57,6 +60,10 @@ function App() {
               {/* Career Page */}
               <Route path="/careers" element={<Careerpage />} />
               <Route path="/apply" element={<JobApplication />} />
+              <Route path="/pricing" element={<Pricingpage />} />
+              {/* Terms & conditions and privacy policy */}
+              <Route path="/Terms-conditons" element={ <Termsandconditions />} />
+              <Route path="/Privacy-policy" element= {<Privacyandpolicy/> } />
             </Routes>
             <Footer />
           </div>
