@@ -71,9 +71,9 @@ export const Footer = () => {
             <li><a href="/Terms-conditons" className="text-gray-400 hover:text-white transition-colors">Terms and conditions</a></li>
             <li><a href="/Privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy policy </a></li>
           </ul>
-          <p className="text-gray-400 text-sm text-center -ml-16">
-    © 2024 ByteBuster. All rights reserved.
-  </p>
+          <p className="text-gray-400 text-sm text-center md:-ml-16 ">
+          © 2024 ByteBuster. All rights reserved.
+          </p>
           <motion.button
             onClick={scrollToTop}
             className="mt-4 md:mt-0 p-2 rounded-full bg-purple-600 hover:bg-purple-700 transition-colors"

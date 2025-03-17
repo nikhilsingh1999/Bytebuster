@@ -23,7 +23,7 @@ export default function Pricingpage() {
             <CardTitle className="text-blue-400 text-2xl">BASIC</CardTitle>
             <CardDescription className="text-gray-400">Basic website package</CardDescription>
             <div className="mt-4 flex items-baseline">
-              <span className="text-5xl font-extrabold tracking-tight text-zinc-200 ">$499</span>
+              <span className="text-5xl font-extrabold tracking-tight text-zinc-200 ">$99</span>
               <span className="ml-1 text-gray-400">/project</span>
             </div>
           </CardHeader>
@@ -66,7 +66,7 @@ export default function Pricingpage() {
             <CardTitle className="text-blue-400 text-2xl">STANDARD</CardTitle>
             <CardDescription className="text-gray-400">Website + basic features</CardDescription>
             <div className="mt-4 flex items-baseline">
-              <span className="text-5xl font-extrabold tracking-tight  text-zinc-200">$999</span>
+              <span className="text-5xl font-extrabold tracking-tight  text-zinc-200">$299</span>
               <span className="ml-1 text-gray-400">/project</span>
             </div>
           </CardHeader>
@@ -118,11 +118,11 @@ export default function Pricingpage() {
             <CardDescription className="text-gray-400">Full-featured web app</CardDescription>
             <div className="mt-4 flex flex-col">
               <div className="flex items-center justify-center">
-                <span className="text-gray-400 line-through text-lg">$2500</span>
-                <span className="ml-2 text-sm bg-blue-900 text-blue-200 px-2 py-0.5 rounded">Save 25%</span>
+                <span className="text-gray-400 line-through text-lg">$1000</span>
+                <span className="ml-2 text-sm bg-blue-900 text-blue-200 px-2 py-0.5 rounded">Save 50%</span>
               </div>
               <div className="flex items-baseline justify-center">
-                <span className="text-5xl font-extrabold tracking-tight  text-zinc-200">$1875</span>
+                <span className="text-5xl font-extrabold tracking-tight  text-zinc-200">$499</span>
                 <span className="ml-1 text-gray-400">/project</span>
               </div>
             </div>
@@ -230,11 +230,11 @@ export default function Pricingpage() {
             <CardTitle className="text-2xl text-blue-400">Basic</CardTitle>
             <div className="mt-4 flex flex-col">
               <div className="flex items-center justify-center">
-                <span className="text-gray-400 line-through text-lg">$5500</span>
+                <span className="text-gray-400 line-through text-lg">$600</span>
                 <span className="ml-2 text-sm bg-blue-900 text-blue-200 px-2 py-0.5 rounded">Save 35%</span>
               </div>
               <div className="flex items-baseline justify-center">
-                <span className="text-5xl font-extrabold tracking-tight  text-zinc-200">$3575</span>
+                <span className="text-5xl font-extrabold tracking-tight  text-zinc-200">$299</span>
                 <span className="ml-1 text-gray-400">/platform</span>
               </div>
             </div>
@@ -279,11 +279,11 @@ export default function Pricingpage() {
             <CardTitle className="text-2xl text-blue-400">Professional</CardTitle>
             <div className="mt-4 flex flex-col">
               <div className="flex items-center justify-center">
-                <span className="text-gray-400 line-through text-lg ">$10000</span>
+                <span className="text-gray-400 line-through text-lg ">$1000</span>
                 <span className="ml-2 text-sm bg-blue-900 text-blue-200 px-2 py-0.5 rounded">Save 25%</span>
               </div>
               <div className="flex items-baseline justify-center">
-                <span className="text-5xl font-extrabold tracking-tight  text-zinc-200">$7500</span>
+                <span className="text-5xl font-extrabold tracking-tight  text-zinc-200">$599</span>
                 <span className="ml-1 text-gray-400">/both platforms</span>
               </div>
             </div>
@@ -333,11 +333,11 @@ export default function Pricingpage() {
             <CardTitle className="text-2xl text-blue-400">Enterprise</CardTitle>
             <div className="mt-4 flex flex-col">
               <div className="flex items-center justify-center">
-                <span className="text-gray-400 line-through text-lg">$15000</span>
+                <span className="text-gray-400 line-through text-lg">$1000</span>
                 <span className="ml-2 text-sm bg-blue-900 text-blue-200 px-2 py-0.5 rounded">Save 10%</span>
               </div>
               <div className="flex items-baseline justify-center">
-                <span className="text-5xl font-extrabold tracking-tight  text-zinc-200">$13500</span>
+                <span className="text-5xl font-extrabold tracking-tight  text-zinc-200">$899</span>
                 <span className="ml-1 text-gray-400">/both platforms</span>
               </div>
             </div>
