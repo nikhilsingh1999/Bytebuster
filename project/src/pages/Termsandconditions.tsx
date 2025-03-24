@@ -1,5 +1,9 @@
 const sections = [
   {
+    title: 'Section 1',
+    content: 'This is the content of section 1.',
+  },
+  {
     title: "1. User Content",
     content: "By visiting our website or using our products or services, you agree to the terms of this Privacy Statement. You expressly consent to the processing of your Personal Information according to this Privacy Statement. Personal Information may be processed by BYTE BUSTER TECHNOLOGIES (P) LTD and trusted vendors or other third parties in the country where it was collected as well as other countries (including the United States) where laws regarding processing of Personal Information may be less stringent."
   },
@@ -60,8 +64,17 @@ const sections = [
     content: "If you choose to visit our website or use our products or services, any dispute over privacy is subject to this Privacy Statement as governed by the laws of the India."
   },
   {
+    title: "16. Refund Policy",
+    content: "We do not offer refunds for any of our services once they have been delivered. All sales are final. If you have any concerns or issues with the services provided, please contact us and we will do our best to resolve the matter."
+  },
+  {
     title: "Contact Us",
-    content: "Should you have any questions or concerns regarding this Privacy Statement please contact us as follows:" + " Ground floor, 234, Sector C, Indrapuri, Bhopal, Madhya pradesh, 462021"
+    content: "Should you have any questions or concerns regarding this Privacy Statement please contact us as follows: Ground floor, 234, Sector C, Indrapuri, Bhopal, Madhya Pradesh, 462021."
+  }
+  , 
+  {
+    title: "Founders of ByteBuster",
+    content: "Satyam Tiwari & Nikhil Singh."
   }
 ];
 
