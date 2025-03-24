@@ -1,8 +1,5 @@
 const sections = [
-  {
-    title: 'Section 1',
-    content: 'This is the content of section 1.',
-  },
+  
   {
     title: "1. User Content",
     content: "By visiting our website or using our products or services, you agree to the terms of this Privacy Statement. You expressly consent to the processing of your Personal Information according to this Privacy Statement. Personal Information may be processed by BYTE BUSTER TECHNOLOGIES (P) LTD and trusted vendors or other third parties in the country where it was collected as well as other countries (including the United States) where laws regarding processing of Personal Information may be less stringent."
