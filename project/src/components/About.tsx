@@ -4,10 +4,10 @@ import CountUp from 'react-countup';
 import { Users, Target, Clock, Award } from 'lucide-react';
 
 const stats = [
-  { icon: Users, end: 100, label: 'Happy Clients' },
-  { icon: Target, end: 150, label: 'Projects Completed' },
-  { icon: Clock, end: 10, label: 'Years Experience' },
-  { icon: Award, end: 25, label: 'Awards Won' },
+  { icon: Users, end: 15, label: 'Happy Clients' },
+  { icon: Target, end: 19, label: 'Projects Completed' },
+  { icon: Clock, end: 3, label: 'Years Experience' },
+  { icon: Award, end: 6, label: 'Awards Won' },
 ];
 
 const founders = [
