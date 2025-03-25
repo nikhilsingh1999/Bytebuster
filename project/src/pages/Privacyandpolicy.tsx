@@ -1,11 +1,11 @@
 const sections = [
   {
-    title: "BYTE BUSTER TECHNOLOGIES respects the privacy of its customers and the visitors and users of its websites.",
+    title: "BYTE BUSTER respects the privacy of its customers and the visitors and users of its websites.",
     content: "This 'Privacy Policy' statement is designed to educate you of our policies and practices regarding the collection, use and disclosure of any personal information we obtain about you based upon your use of our website, products or services so that you can make an informed decision whether you want to use this website."
   },
   {
     title: "1. User Content",
-    content: "By visiting our website or using our products or services, you agree to the terms of this Privacy Statement. You expressly consent to the processing of your Personal Information according to this Privacy Statement. Personal Information may be processed by BYTE BUSTER TECHNOLOGIES and trusted vendors or other third parties in the country where it was collected as well as other countries (including the United States) where laws regarding processing of Personal Information may be less stringent."
+    content: "By visiting our website or using our products or services, you agree to the terms of this Privacy Statement. You expressly consent to the processing of your Personal Information according to this Privacy Statement. Personal Information may be processed by BYTE BUSTER and trusted vendors or other third parties in the country where it was collected as well as other countries where laws regarding processing of Personal Information may be less stringent."
   },
   {
     title: "2. Collection of Personal Information",
