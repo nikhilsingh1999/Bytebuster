@@ -65,7 +65,7 @@ const sections = [
   },
   {
     title: "16. Contact Us",
-    content: "Should you have any questions or concerns regarding this Privacy Statement please contact us as follows: Ground floor, 234, Sector C, Indrapuri, Bhopal, Madhya pradesh, 462021"
+    content: "Should you have any questions or concerns regarding this Privacy Statement please contact us as follows: my home, ward no 24,block A, mau road , Tikamgarh, Madhya pradesh, 472001"
   }
 ];
 

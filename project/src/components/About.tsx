@@ -4,10 +4,10 @@ import CountUp from 'react-countup';
 import { Users, Target, Clock, Award } from 'lucide-react';
 
 const stats = [
-  { icon: Users, end: 15, label: 'Happy Clients' },
-  { icon: Target, end: 19, label: 'Projects Completed' },
-  { icon: Clock, end: 3, label: 'Years Experience' },
-  { icon: Award, end: 6, label: 'Awards Won' },
+  { icon: Users, end: 5, label: 'Happy Clients' },
+  { icon: Target, end: 5, label: 'Projects Completed' },
+  { icon: Clock, end: 2, label: 'Years Experience' },
+  { icon: Award, end: 2, label: 'Awards Won' },
 ];
 
 const founders = [
@@ -18,10 +18,10 @@ const founders = [
     bio: "Satyam Tiwari brings a wealth of expertise in digital strategy and client relationships, ensuring Byte Buster delivers value-driven results on every project.",
   },
   {
-    name: "Nikhil Singh",
+    name: "Brajendra Singh",
     title: "Co-Founder & Lead Developer",
     image: "https://i.postimg.cc/zXdGsRWc/profile-DP.png", // Replace with actual image path
-    bio: "Nikhil Singh is the tech powerhouse behind Byte Buster, spearheading innovative solutions and guiding the team to success with over 10 years of experience.",
+    bio: "Brajendra Singh is the tech powerhouse behind Byte Buster, spearheading innovative solutions and guiding the team to success with over 10 years of experience.",
   },
 ];
 

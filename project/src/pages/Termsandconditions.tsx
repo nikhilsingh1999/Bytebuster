@@ -66,12 +66,12 @@ const sections = [
   },
   {
     title: "Contact Us",
-    content: "Should you have any questions or concerns regarding this Privacy Statement please contact us as follows: Ground floor, 234, Sector C, Indrapuri, Bhopal, Madhya Pradesh, 462021."
+    content: "Should you have any questions or concerns regarding this Privacy Statement please contact us as follows: my home, ward no 24 ,block A , mau road , Tikamgarh, Madhya pradesh, 472001."
   }
   , 
   {
     title: "Founders of ByteBuster",
-    content: "Satyam Tiwari & Nikhil Singh."
+    content: "Brajendra singh & Satyam tiwari."
   }
 ];
 

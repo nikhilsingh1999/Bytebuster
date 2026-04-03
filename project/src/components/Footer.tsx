@@ -58,10 +58,10 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Contact</h3>
             <ul className="space-y-4 text-gray-400">
-              <li>Ground Floor , 234 , Sector C , Indrapuri , 462021</li>
-              <li>Bhopal, Madhya Pradesh</li>
-              <li>hello@bytebuster.com</li>
-              <li>+91 (966) 942-8739</li>
+              <li>my home ,ward 24 , block A , mau raod  , 472001</li>
+              <li>Tikamgarh, Madhya Pradesh</li>
+              <li>info@bytebustertech.co.in</li>
+              <li>+91 (9131) 75-3246</li>
             </ul>
           </div>
         </div>
@@ -72,7 +72,7 @@ export const Footer = () => {
             <li><a href="/Privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy policy </a></li>
           </ul>
           <p className="text-gray-400 text-sm text-center md:-ml-16 ">
-          © 2024 ByteBuster. All rights reserved.
+          © 2025 ByteBustertech. All rights reserved.
           </p>
           <motion.button
             onClick={scrollToTop}

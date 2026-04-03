@@ -173,7 +173,7 @@ export const Contact = () => {
                     rel="noopener noreferrer"
                     className="hover:text-[#25D366] transition-colors"
                   >
-                    +91 (555) 315-4567
+                    +91 (913) 175-3246
                   </a>
                 </p>
                 <p className="text-gray-400">Reach us instantly via WhatsApp!</p>
@@ -189,8 +189,8 @@ export const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Email Us</h3>
-                <p className="text-gray-400">hello@bytebuster.com</p>
-                <p className="text-gray-400">support@bytebuster.com</p>
+                <p className="text-gray-400">info@bytebustertech.co.in</p>
+                <p className="text-gray-400">support@bytebustertech.co.in</p>
               </div>
             </div>
 
@@ -200,8 +200,8 @@ export const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Call Us</h3>
-                <p className="text-gray-400">+91 (966) 942-8739</p>
                 <p className="text-gray-400">+91 (913) 175-3246</p>
+                <p className="text-gray-400">+91 (966) 942-8739</p>
               </div>
             </div>
 
@@ -211,8 +211,8 @@ export const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Visit Us</h3>
-                <p className="text-gray-400">234 , Sector C Indrapuri</p>
-                <p className="text-gray-400">Bhopal,(M.P.) </p>
+                <p className="text-gray-400">ward no 24,my home , mau road</p>
+                <p className="text-gray-400">Tikamgarh ,(M.P.) </p>
               </div>
             </div>
 
